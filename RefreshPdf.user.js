@@ -12,7 +12,7 @@
     if (e.keyCode == 82 && e.ctrlKey) {
       var curViewLink = document.getElementById('viewBookmark');
       window.location = curViewLink.href;
-      window.location.reload(curViewLink.href);
+      window.location.reload();
     }
   }, false);
 }) ();
