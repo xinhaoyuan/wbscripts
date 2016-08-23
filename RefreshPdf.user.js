@@ -8,8 +8,8 @@
 // ==/UserScript==
 (function () {
   document.addEventListener('keydown', function (e) {
-    // pressed alt+g
-    if (e.keyCode == 82 && !e.shiftKey && e.ctrlKey && e.altKey && !e.metaKey) {
+    // pressed ctrl-r
+    if (e.keyCode == 82 && e.ctrlKey) {
       var curViewLink = document.getElementById('viewBookmark');
       window.location = curViewLink.href;
       window.location.reload(curViewLink.href);
